@@ -18,10 +18,6 @@ body {
     min-height: 100vh;
 }
 
-.railw {
-    text-align: center;
-    font-size: 50px;
-}
 
 .rl__st {
     display: flex;
