@@ -22,13 +22,12 @@
         <li><a href="{{url_for('index')}}" class="nav-link px-2 link-secondary">Главная</a></li>
         <li><a href="{{url_for('about')}}" class="nav-link px-2">История ж/д вокзалов</a></li>
         <li><a href="{{url_for('schedule')}}" class="nav-link px-2">Расписание поездов</a></li>
-<!--        <li><a href="#" class="nav-link px-2">FAQs</a></li>-->
-<!--        <li><a href="#" class="nav-link px-2">About</a></li>-->
+
       </ul>
 
       <div class="col-md-3 text-end">
-        <button type="button" class="btn btn-outline-primary me-2">Войти</button>
-        <button type="button" class="btn btn-primary">Зарегестрироваться</button>
+        <a href="{{url_for('login')}}" class="btn_lg">Войти</a>
+        <a href="{{url_for('register_form')}}" class="btn_reg">Регистрация</a>
       </div>
     </header>
     <div class="content">

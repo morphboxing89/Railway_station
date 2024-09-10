@@ -18,6 +18,11 @@ body {
     min-height: 100vh;
 }
 
+.railw {
+    text-align: center;
+    font-size: 50px;
+}
+
 .rl__st {
     display: flex;
     justify-content: space-between;
@@ -88,4 +93,28 @@ footer {
 .about2__img {
     width: 30%;
     height: 50%;
+}
 
+.btn_lg {
+  padding: 8px 15px;
+  background-color: #3498db;
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  border-radius: 4px;
+  display: inline-block;
+}
+
+.btn_reg {
+  padding: 8px 15px;
+  background-color: #3498db;
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  border-radius: 4px;
+  display: inline-block;
+}
+.frm {
+    display: inline-block;
+    margin: 20px;
+}
