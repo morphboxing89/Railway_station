@@ -1,4 +1,4 @@
-from flask import render_template, request, redirect, url_for
+from flask import render_template, request, redirect, url_for, flash
 from flask_login import logout_user, login_user
 
 from models import Train
@@ -34,6 +34,7 @@ def register_routes(app, db, bcrypt):
 
             db.session.add(user)
             db.session.commit()
+            flash(f'Поздравляем, {username}! Вы зарегестрировались', 'success')
             return redirect(url_for('login'))
 
     @app.route('/login', methods=['GET', 'POST'])
@@ -45,7 +46,7 @@ def register_routes(app, db, bcrypt):
                 login_user(user)
                 return render_template('index.html')
             else:
-                f'Ошибка входа. Проверьте имя и пароль'
+                flash('Ошибка входа. Проверьте имя и пароль', 'danger')
         return render_template('login.html')
 
     @app.route('/logout')
